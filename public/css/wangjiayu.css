@@ -1,0 +1,44 @@
+#header {
+    /*height: 150px;*/
+    background: #808080;
+    margin: 10px;
+}
+#box {
+    display: flex;
+}
+
+#left {
+    flex: 0 1 auto; /*0表示不占有多余宽度，1表示在宽度小于初始值时按1比1缩小，auto宽度初始值*/
+    margin: 10px;
+    width: 35%;  /*show里的文字只能撑到box40%的宽度，这里和flex占有多余宽度无关*/
+}
+#right {
+    flex: 0 1 auto;
+    margin: 10px;
+    width: 35%;
+}
+
+#show {
+    padding: 5px;
+    background: #f1b8e7;
+    height: 550px;
+    overflow: scroll;
+    white-space:nowrap;
+}
+
+#show_fix {
+    padding: 5px;
+    background: #dcdcdc;
+    height: 550px;
+    overflow: scroll;
+    white-space:nowrap;
+}
+button {
+    /*display: block;*/
+    margin: 10px;
+    padding: 3px 5px;
+}
+#txt,#submit {
+    margin: 10px;
+    padding: 3px 5px;
+}
